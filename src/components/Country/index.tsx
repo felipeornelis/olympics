@@ -1,4 +1,5 @@
 import Flag from 'react-world-flags'
+import Image from 'next/image'
 
 import type { CountryProps } from './types'
 import * as S from './styles'
@@ -15,7 +16,13 @@ export default function Country({
   return (
     <S.Container>
       <header>
-        <Flag code={code} fallback={<img src={fallback} />} />
+        {/* <Flag code={code} fallback={<Image src={fallback} /> */}
+        <Flag
+          code={code}
+          fallback={
+            <Image alt={`${name} national flag`} src={fallback as any} />
+          }
+        />
         <span>
           #{rank} - {name}
         </span>

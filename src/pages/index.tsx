@@ -29,6 +29,7 @@ export default function Hello() {
         <S.Table>
           {medalsPanel.map((country) => (
             <Country
+              key={country.ranking}
               name={country.country.name}
               golden={country.gold}
               silver={country.silver}
