@@ -16,7 +16,12 @@ export default function Hello() {
           <span>The medal panel below is updated daily </span>
         </div>
         <div className="hero-olympics-image">
-          <Image src={OlympicsTokyo} width={350} height={350} />
+          <Image
+            src={OlympicsTokyo}
+            width={350}
+            height={350}
+            alt="Tokyo 2020 Olympics Game logo"
+          />
         </div>
       </S.Hero>
 

@@ -20,7 +20,12 @@ export default function Country({
         <Flag
           code={code}
           fallback={
-            <Image alt={`${name} national flag`} src={fallback as any} />
+            <Image
+              alt={`${name} national flag`}
+              src={fallback as any}
+              width={70}
+              height={50}
+            />
           }
         />
         <span>
